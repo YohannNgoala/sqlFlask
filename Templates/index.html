@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-    <h1>Index</h1>
+
 </head>
 <body>
-
+ <h4>Welcome to Index !</h4>
+    <p><a href="{{ url_for('display_admin') }}">Display admin</a> <a href="{{ url_for('redirection_create_admin') }}">Create admin</a></p>
+    <p><a href="{{ url_for('display_course') }}">Display course</a> <a href="{{ url_for('redirection_create_course') }}">Create course</a></p>
+    <p><a href="{{ url_for('display_grade') }}">Display grade</a> <a href="{{ url_for('redirection_create_grade') }}">Create grade</a></p>
+    <p><a href="{{ url_for('display_role') }}">Display role</a> <a href="{{ url_for('redirection_create_role') }}">Create role</a></p>
+    <p><a href="{{ url_for('display_role_right') }}">Display role_right</a> <a href="{{ url_for('redirection_create_role_right') }}">Create role right</a></p>
+    <p><a href="{{ url_for('display_speciality') }}">Display speciality</a> <a href="{{ url_for('redirection_create_speciality') }}">Create speciality</a></p>
+    <p><a href="{{ url_for('display_student') }}">Display student</a> <a href="{{ url_for('redirection_create_student') }}">Create student</a></p>
+    <p><a href="{{ url_for('display_student_course') }}">Display student_course</a> <a href="{{ url_for('redirection_create_student_course') }}">Create student course</a></p>
 </body>
 </html>

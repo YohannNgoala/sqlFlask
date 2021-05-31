@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{{ url_for('update_admin', id=id) }}" method="post">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" value="{{data[0][1]}}">
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" value="{{data[0][2]}}">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="mail" name="mail" value="{{data[0][3]}}">
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="phone" class="form-control" id="phone" name="phone" value="{{data[0][4]}}">
+    </div>
+    <div class="form-group">
+        <label>Date Of Birth</label>
+        <input type="date" class="form-control" id="dob" name="dob" value="{{data[0][5]}}">
+    </div>
+    <div class="form-group">
+        <label>Speciality ID</label>
+        <input type="number" class="form-control" id="specialityId" name="specialityId" value="{{data[0][6]}}">
+    </div>
+    <div class="form-group">
+        <label>Role ID</label>
+        <input type="number" class="form-control" id="roleId" name="roleId" value="{{data[0][7]}}">
+    </div>
+    <input type="submit">
+</form>
+</body>
+</html>
